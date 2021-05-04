@@ -247,7 +247,6 @@ strong {
 
 .text {
     position: relative;
-    width: 704px;
     padding: 52px 100px 0 0;
     z-index: 2;
     display: block;
@@ -746,5 +745,18 @@ strong {
         font-size: 43px;
         position: relative;
         top: -20px;
+}
+    .text p{
+        font-size: 18px;
+    }
+
+    .text h2 {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .menu-block {
+        padding-right: 0;
+    }
 
 }
