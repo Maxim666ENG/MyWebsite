@@ -35,6 +35,20 @@ body {
     position: relative;
 }
 
+h2 {
+    margin-bottom: 20px;
+    font-size: 66px;
+    color: #000001;
+    font-weight: 700;
+    line-height: 0.97;
+    margin-top: 0;
+}
+
+strong {
+    font-weight: 600;
+    font-style: normal !important;
+}
+
 /*UTILITIES*/
 
 .hr-large  {
@@ -43,14 +57,6 @@ body {
     line-height: 0.97 !important;
 }
 
-.info-block h2 {
-    margin-bottom: 20px;
-    font-size: 66px;
-    color: #000001;
-    font-weight: 700;
-    line-height: 0.97;
-    margin-top: 0;
-}
 
 
 .info-block {
@@ -89,6 +95,9 @@ body {
     background-color: transparent;
 }
 
+.menu-logo a {
+    margin: 0 !important;
+}
 
 .header * {
     font-family: 'Lato', sans-serif;

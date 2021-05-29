@@ -1,0 +1,359 @@
+
+
+body h2, p{
+    font-family: 'Playfair Display', serif !important;
+}
+
+h2{
+    margin-bottom: 15px;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 0.97;
+}
+
+button {
+    align-self: center;
+    width: 150px;
+    height: 32px;
+    background: var(--black);
+    border-radius: 3px;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+strong {
+    font-size: 0.840em;
+}
+
+
+
+/*header part*/
+
+.header {
+    height: 300px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 45px;
+}
+
+
+.header p {
+    font-size: 25px;
+}
+
+
+/*CSS used by both price cards*/
+
+.purchase-btn a {
+    color: var(--white) !important;
+}
+
+.purchase-btn:hover {
+    animation: btn-hover 1.2s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btn-hover {
+  from {opacity: 1;}
+  to {opacity: 0.7;}
+}
+
+
+.price-cards {
+    padding: 65px calc(50% - 610px) 57px calc(50% - 500px);
+    font-family: 'Metropolis', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 665px;
+}
+
+
+.price-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 265px;
+    max-height: 450px;
+    box-shadow: 1px 1px 16px 2px rgb(0 0 0 / 7%);
+    padding: 40px 40px;
+}
+
+
+
+.price-cards li{
+    text-decoration: none;
+    list-style: none;
+    margin: 7px 0;
+}
+
+.price-icon img{
+    display: block;
+    height: 74px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.price-card ul {
+    padding: 0;
+    text-align: center;
+    margin-top: 0;
+}
+
+.price-card p {
+    font-size: 18px;
+    font-family: 'Metropolis', sans-serif !important;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.price-number {
+    font-size: 60px;
+    font-weight: 400;
+    position: relative;
+    width: 140px;
+    align-self: center;
+}
+
+.price-number::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-right: 5px;
+    font-size: 35px;
+    color: inherit;
+    content: '$';
+}
+
+
+/*CSS used by the second price card (.second-price-card)*/
+
+.second-price-card .purchase-btn-2 {
+    margin-top: 10px;
+}
+
+.second-price-card {
+    margin-bottom: 30px;
+}
+
+/*the Info Card*/
+
+.info-card {
+    width: 350px;
+    position: relative;
+    padding: 5px 40px;
+    box-shadow: none;
+}
+
+.info-card ul {
+    text-align: left;
+}
+
+.points {
+    position: relative;
+}
+
+.points ul .check {
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 0.940em;
+    color: grey;
+}
+
+.points ul .check::before {
+    position: absolute;
+    top: 2px;
+    left: -27px;
+    width: 16px;
+    height: 13px;
+    background: url(assets/check.png);
+    content: '';
+    opacity: 0.8;
+}
+
+.points .list-header {
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+
+.dl-elem > *{
+    color: var(--black) !important;
+}
+
+.dl-elem {
+    position: absolute;
+    top: 15px;
+    left: 70px;
+    text-align: left;
+}
+
+.dl-elem > * {
+    font-size: 11px !important;
+}
+
+.dl-elem dt {
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.review {
+    position: relative;
+}
+
+.review-text p{
+    font-size: 12px;
+    color: #939393;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.review-text {
+    max-width: 200px;
+    position: absolute;
+    right: 0;
+    top: 53px;
+}
+
+.review-text::before {
+    position: absolute;
+    top: -12px;
+    right: 100%;
+    color: #c7c7c7;
+    line-height: 1.2;
+    font-size: 55px;
+    font-family: "proximanova-regular", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    content: '\201C';
+}
+
+.review .avatar {
+    width: 52px;
+    height: 46px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.avatar img {
+    border-radius: 50%;
+}
+
+.customized-license {
+    position: absolute;
+    bottom: 5px;
+    opacity: 0.8;
+    font-size: 14px;
+    border-top: 2px solid #DCDCDC;
+    padding-top: 20px;
+}
+
+/*FOOTER*/
+
+.footer {
+    padding: 35px 50px;
+    font-size: 13px;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 44px;
+    text-align: center;
+}
+
+
+/*Media queries*/
+
+
+@media(max-width: 1000px) {
+
+
+
+    .price-cards {
+        height: 1000px;
+    }
+
+    .header {
+        height: 180px;
+    }
+
+    .header p {
+        font-size: 15px;
+    }
+
+    .menu-block {
+        padding-top: 20px;
+    }
+
+    .header {
+        padding: 15px 15px;
+    }
+
+    .first-logo {
+        width: 100px;
+    }
+
+    .header-text {
+        padding-top: 0;
+    }
+
+    .header .menu-block a {
+        font-size: 15px;
+    }
+
+    .price-cards {
+        padding: 40px 15px;
+    }
+
+    .price-card {
+        width: 49%;
+    }
+
+    .burger {
+        top: 15px;
+    }
+
+
+    .info-card {
+        width: 500px;
+        margin-bottom: 40px;
+    }
+
+    .price-number::before {
+        right: 60%;
+    }
+
+    .review-text {
+        left: 70px;
+        max-width: 350px;
+    }
+
+}
+
+@media(max-width: 720px) {
+    .price-card {
+        width: 100%;
+    }
+
+    .price-cards {
+        height: 1500px;
+    }
+
+    .header-text {
+        padding-top: 0;
+    }
+}
+
+
+@media(max-width: 320px) {
+    .review-text {
+        top: 45px;
+    }
+}
