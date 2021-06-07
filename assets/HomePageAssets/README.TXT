@@ -1,0 +1,1 @@
+Some of this folder's assets are used by other pages.

@@ -27,7 +27,6 @@ strong {
 }
 
 
-
 /*header part*/
 
 .header {
@@ -38,7 +37,7 @@ strong {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 45px;
+    padding-top: 15px;
 }
 
 
@@ -172,7 +171,7 @@ strong {
     left: -27px;
     width: 16px;
     height: 13px;
-    background: url(assets/check.png);
+    background: url(assets/HomePageAssets/check.png);
     content: '';
     opacity: 0.8;
 }
@@ -273,8 +272,6 @@ strong {
 
 
 @media(max-width: 1000px) {
-
-
 
     .price-cards {
         height: 1000px;

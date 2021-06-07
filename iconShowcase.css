@@ -1,0 +1,188 @@
+body h2, p{
+    font-family: 'Playfair Display', serif !important;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 0.97;
+}
+
+
+button {
+    align-self: center;
+    width: 150px;
+    height: 32px;
+    background: var(--black);
+    border-radius: 3px;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+strong {
+    font-size: 0.840em;
+}
+
+
+p {
+    font-size: 25px;
+}
+
+.menu {
+    position: relative;
+}
+
+/*nav-bar and header parts*/
+
+.header {
+    height: 289px;
+}
+
+
+.header-text {
+    text-align: center;
+}
+
+/*Tab-controls and general padding*/
+
+
+.icons-tab {
+    padding: 30px 15px;;
+    position: relative;
+}
+
+.tab {
+    position: relative;
+    align-items: center;
+}
+
+.tab-content {
+    padding: 53px calc(50% - 380px);
+    padding-top: 0;
+}
+
+.tab-switch {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #e4e4e4;
+    width: 165px;
+    margin: 0 auto;
+    margin-top: 17px;
+}
+
+
+.tab-switch > * {
+    margin: 0 25px 0 7px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+.tab-switch > *:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    /*border-bottom: 2px solid #000;*/
+}
+
+
+/*
+Tab-content*/
+
+.preview-item {
+    margin-top: 85px;
+}
+
+.preview-title {
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+
+/*Tab switching*/
+
+
+.border_bot_active {
+    border-bottom: 2px solid #000;
+}
+
+.tab-active {
+    display: block !important;
+}
+
+.icons-preview-color {
+    display: none;
+}
+
+.icons-preview-line {
+    display: none;
+}
+
+.icons-preview-solid {
+    display: none;
+}
+
+
+
+/*footer*/
+
+.footer {
+    position: static;
+    margin: 0 auto;
+    width: 500px;
+    padding-left: 80px;
+}
+
+@media(max-width: 1000px){
+    .header {
+        height: 180px;
+    }
+
+    .header p {
+        font-size: 15px;
+    }
+
+    .menu-block {
+        padding-top: 20px;
+    }
+
+    .header {
+        padding: 15px 15px;
+    }
+
+    .first-logo {
+        width: 100px;
+    }
+
+    .header-text {
+        padding-top: 0;
+    }
+
+    .header .menu-block a {
+        font-size: 15px;
+    }
+
+
+    .burger {
+        top: 15px;
+    }
+
+
+}
+
+
+@media(max-width: 400px){
+    .footer {
+        font-size: 12px;
+        padding-left: 40px;
+    }
+
+}

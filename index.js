@@ -24,6 +24,9 @@ const navSlide= ()=> {
     });
 
     preview.addEventListener('click', () =>{
+        preview.classList.add('border_bot_active')
+        standard_svg.classList.remove('border_bot_active')
+        optimized_svg.classList.remove('border_bot_active')
         tab_img_1.classList.add('image-active');
         tab_img_2.classList.remove('image-active');
         tab_img_3.classList.remove('image-active');
@@ -33,6 +36,9 @@ const navSlide= ()=> {
     });
 
     standard_svg.addEventListener('click', () =>{
+        standard_svg.classList.add('border_bot_active')
+        preview.classList.remove('border_bot_active')
+        optimized_svg.classList.remove('border_bot_active')
         tab_img_2.classList.add('image-active');
         tab_img_1.classList.remove('image-active');
         tab_img_3.classList.remove('image-active');
@@ -42,6 +48,9 @@ const navSlide= ()=> {
     });
 
     optimized_svg.addEventListener('click', () =>{
+        optimized_svg.classList.add('border_bot_active')
+        standard_svg.classList.remove('border_bot_active')
+        preview.classList.remove('border_bot_active')
         tab_img_3.classList.add('image-active');
         tab_img_1.classList.remove('image-active');
         tab_img_2.classList.remove('image-active');
